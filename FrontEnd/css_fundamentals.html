@@ -1,37 +1,57 @@
-CSS stands for Cascading Style Sheet 
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>CSS Fundamentals</title>
+    </head>
+    
+    <body>
+        <p>
+            CSS stands for Cascading Style Sheet 
 
-The style sheet holds the rule set
+            The style sheet holds the rule set
 
-Rule sets contain one or more of the following; 
+            Rule sets contain one or more of the following; 
 
-selector {declaration} => selector {property: value; property:value ...}
+            selector {declaration} => selector {property: value; property:value ...}
 
-The rule set can live in one of 3 places: 
-1. Inline via element’s opening tag style attribute:
-    <code>
-        <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
-    </code>
+            The rule set can live in one of 3 places: 
+            
+                <ol> 
+                    <li>Inline via element’s opening tag style attribute:
+                        <code>
+                            <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+                        </code>
+                    </li>
+                    
+                    <li> Header via style tag:
+                        <code>
+                            <head>
+                              <style>
+                                h1 {
+                                  color: blue;
+                                }
+                              </style>
+                            </head>
+                        </code>
+                    </li>
+                    
+                    <li> Separate file via <link> tag in the <head>:
+                       <code>
+                            <head>
+                              <link href="style.css" type="text/css" rel="stylesheet">
+                            </head>
+                        <code>
+                        Note: href = url type = content type, rel = relationship to html file
+                    </li>
 
-2. Header via style tag:
-    <code>
-        <head>
-          <style>
-            h1 {
-              color: blue;
-            }
-          </style>
-        </head>
-    </code>
+            Option 3 is easiest to run at scale. 
+        </p>
 
-3. Separate file via <link> tag in the <head>:
-   <code>
-        <head>
-          <link href="style.css" type="text/css" rel="stylesheet">
-        </head>
-    <code>
-    Note: href = url type = content type, rel = relationship to html file
+    </body>
+</html>
 
-Option 3 is easiest to run at scale. 
+
+
 
 
 Valid Selectors:
