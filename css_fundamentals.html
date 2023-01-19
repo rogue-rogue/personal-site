@@ -8,21 +8,27 @@ selector {declaration} => selector {property: value; property:value ...}
 
 The rule set can live in one of 3 places: 
 1. Inline via element’s opening tag style attribute:
-    <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+    <code>
+        <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+    </code>
 
 2. Header via style tag:
-    <head>
-      <style>
-        h1 {
-          color: blue;
-        }
-      </style>
-    </head>
+    <code>
+        <head>
+          <style>
+            h1 {
+              color: blue;
+            }
+          </style>
+        </head>
+    </code>
 
 3. Separate file via <link> tag in the <head>:
-    <head>
-      <link href="style.css" type="text/css" rel="stylesheet">
-    </head>
+   <code>
+        <head>
+          <link href="style.css" type="text/css" rel="stylesheet">
+        </head>
+    <code>
     Note: href = url type = content type, rel = relationship to html file
 
 Option 3 is easiest to run at scale. 
@@ -41,12 +47,12 @@ Valid Selectors:
  Valid Properties: 
   Design: 
     font-size: 30px
-    background-colour: blue or #2a2aff
+    background-colour: color
     opacity: 0 or 1 or between
     font-weight: bold or normal 
     text-align: right or left or centre
     background-image: url("https:www....")
-    font-family: verdana
+    font-family: Single or 'Multiple Word Font Name' or Preference, Backup, Backup...
   
   Box Model:
     width: _px
@@ -72,4 +78,13 @@ Valid Selectors:
     display: block or inline or inline-block
     float: left or right
     clear: left or right
+  
+
+  More on color: 
+    Colors can be specified in one of the following formats; 
+        1. Keyword
+        2. RGB
+        3. HEX
+        4. HSL
+        5. HSLA
   
