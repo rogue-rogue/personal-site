@@ -1,7 +1,7 @@
 <html>
   <head> 
     <title>Day 2</title>
-    <link href="./FrontEnd/css_fundamentals.css" type="text/css" rel="stylesheet">
+    <link href="./style/style.css" type="text/css" rel="stylesheet">
   </head>
   
   <body>
@@ -92,7 +92,39 @@
       <li> ID </li>
       <li> Class </li>
     </ul>
-    <p> If multiple selectors are applied to an element, there is an order of application called <strong>Specificity</strong><br>
+
+    This is the difference between an ID and class selector: 
+    <code> 
+      /* Selects all elements with class="column" */
+      .column {
+      }
+
+      /* Selects element with id="first-item" */
+      #first-item {
+      }
+    </code>
+
+    <p> If multiple elements share the same rulsets, we can list them: <br>
+      <code> 
+        h1, h2 {
+            color: red;
+          }
+      </code>
+    If elements within elements need a ruleset, we can chain them together: <br>
+      <code>
+        /* Select h3 elements with the section-heading class */
+        h3.section-heading {
+          color: blue;
+        }
+
+        /* Select elements with the section-heading and button class */
+        .section-heading.button {
+          cursor: pointer;
+        }
+      </code>
+      
+    If multiple selectors are applied to an element, there is an order of application called <strong>Specificity</strong><br>
+    Specificity refers to how a browser decides which styles to display when there are multiple styles defined that could apply to the same element.<br>
     Highest : ID, class, type : Lowest </p>
 
     <h4>Valid Properties</h4>
