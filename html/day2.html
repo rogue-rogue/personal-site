@@ -52,47 +52,50 @@
         
         The rule set can live in one of 3 places:     
         <ol> 
-            <li>Inline via element’s opening tag style attribute:
-                <code>
-                    <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
-                </code>
-            </li>
+        <li>Inline via element’s opening tag style attribute:
+          <code>
+            &lt;p style="color: blue; font-size: 18px;"&gt;Blue, 18-point text&lt;/p&gt;
+          </code>
+        </li>
 
-            <li> Header via style tag:
-                <code>
-                    <head>
-                      <style>
-                        h1 {
-                          color: blue;
-                        }
-                      </style>
-                    </head>
-                </code>
-            </li>
+        <li>Header via style tag:
+          <code>
+            &lt;head&gt;
+              &lt;style&gt;
+                h1 {
+                  color: blue;
+                }
+              &lt;/style&gt;
+            &lt;/head&gt;
+          </code>
+        </li>
 
-            <li> Separate file via <link> tag in the <head>:
-               <code>
-                    <head>
-                      <link href="style.css" type="text/css" rel="stylesheet">
-                    </head>
-                </code>
-                Note: href = url type = content type, rel = relationship to html file
-            </li>
+        <li>Separate file via &lt;link&gt; tag in the &lt;head&gt;:
+          <code>
+            &lt;head&gt;
+              &lt;link href="style.css" type="text/css" rel="stylesheet"&gt;
+            &lt;/head&gt;
+          </code>
+          Note: href = url type = content type, rel = relationship to html file
+        </li>
 
-            Option 3 is easiest to run at scale.</p>
-        </ol> 
+        <li>Option 3 is easiest to run at scale.</li>
+        </ol>
+    
     <h3>CSS Shortcuts</h3>
     <h4>Valid Selectors:</h4>
-    <p>Element Type
-    Element Type Element Type ... (descendant selector for nested types) <br>
-    Element Type + Class (chain) <br>
-    Multiple Element Types (comma separated) <br>
-    ID <br>
-    Class <br>
-    <em>Specificity:</em> Highest: ID, class, type :Lowest <br>
+    <ul>
+      <li> Element Type </li>
+      <li> Element Type Element Type ... (descendant selector for nested types) </li>
+      <li> Element Type + Class (chain) </li>
+      <li> Multiple Element Types (comma separated) </li>
+      <li> ID </li>
+      <li> Class </li>
+    <p> If multiple selectors are applied to an element, there is an order of application: <br>: 
+    <em>Specificity:</em> Highest: ID, class, type :Lowest </p>
 
     <h4>Valid Properties:</h4>
-    <h5>Design:</h5> 
+    <strong>Design:</strong>
     <ul>
       <li> font-size: 30px </li>
       <li> background-colour: color </li>
@@ -103,7 +106,7 @@
       <li> font-family: Single or 'Multiple Word Font Name' or Preference, Backup, Backup... </li>
     </ul>
 
-    <h5>Box Model:</h5>
+    <strong>Box Model:</strong>
     <ul>
       <li> width: _px </li>
       <li> height: _px </li>
@@ -123,8 +126,7 @@
       <li> right:  </li>
     </ul>
 
-
-    <h5>Positioning:</h5> 
+    <strong>Positioning:</strong>
     <ul> 
       <li> position: static or relative or absolute or fixed
       <li> z index: number
@@ -133,16 +135,15 @@
       <li> clear: left or right
     </ul>
         
-    <h5>More on color:</h5>
-    <p>Colors can be specified in one of the following formats; </p>
+    <strong>More on color:</strong>
+    <p>Colors can be specified in one of the following formats:</p>
     <ol>
       <li>Keyword </li>
       <li>RGB </li>
       <li>HEX </li>
       <li>HSL </li>
       <li>HSLA </li>
-    </ol>
-       
+    </ol>  
   
   </body>
     
