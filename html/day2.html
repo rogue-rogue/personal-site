@@ -1,6 +1,7 @@
 <html>
   <head> 
     <title>Day 2</title>
+    <link href="./FrontEnd/css_fundamentals.css" type="text/css" rel="stylesheet">
   </head>
   
   <body>
@@ -34,6 +35,115 @@
         We can find a full list of these attributes <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes"  target="_blank">here</a>. <br>
     </p>
     
+    <h2>Today's work pt 2 (post lunch hehe)</h2>
+    <h3>CSS intro</h3>
+    <p> CSS stands for Cascading Style Sheet.<br>
+        The style sheet holds the rule set<br>
+        Rule sets contain one or more of the following: 
+            selector {
+                declaration
+                } 
+            or more specifically: 
+            selector {
+              property: value; 
+              property:value;
+              ...
+              }
+        
+        The rule set can live in one of 3 places:     
+        <ol> 
+            <li>Inline via element’s opening tag style attribute:
+                <code>
+                    <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
+                </code>
+            </li>
+
+            <li> Header via style tag:
+                <code>
+                    <head>
+                      <style>
+                        h1 {
+                          color: blue;
+                        }
+                      </style>
+                    </head>
+                </code>
+            </li>
+
+            <li> Separate file via <link> tag in the <head>:
+               <code>
+                    <head>
+                      <link href="style.css" type="text/css" rel="stylesheet">
+                    </head>
+                <code>
+                Note: href = url type = content type, rel = relationship to html file
+            </li>
+
+            Option 3 is easiest to run at scale.</p>
+
+    <h3>CSS Shortcuts</h3>
+    <h4>Valid Selectors:</h4>
+    <p>Element Type
+    Element Type Element Type ... (descendant selector for nested types) <br>
+    Element Type + Class (chain) <br>
+    Multiple Element Types (comma separated) <br>
+    ID <br>
+    Class <br>
+    <em>Specificity:</em> Highest: ID, class, type :Lowest <br>
+
+    <h4>Valid Properties:</h4>
+    <h5>Design:</h5> 
+    <ul>
+      <li> font-size: 30px </li>
+      <li> background-colour: color </li>
+      <li> opacity: 0 or 1 or between </li>
+      <li> font-weight: bold or normal  </li>
+      <li> text-align: right or left or centre </li>
+      <li> background-image: url("https:www....") </li>
+      <li> font-family: Single or 'Multiple Word Font Name' or Preference, Backup, Backup... </li>
+    </ul>
+
+    <h5>Box Model:</h5>
+    <ul>
+      <li> width: _px </li>
+      <li> height: _px </li>
+      <li> padding: _px </li>
+      <li> border: _px pattern color </li>
+      <li> margin: _px or vert px horz px or top right bottom left px or auto auto (centers content) </li>
+      <li> overflow: visible (default) or hidden or scroll  </li>
+      <li> max-height: window resizing content dimension  </li>
+      <li> min-height: " </li>
+      <li> max-width: " </li>
+      <li> min-width: " </li>
+      <li> box-sizing: content-box (default) or border-box </li>
+      <li> visibility:  </li>
+      <li> top:  </li>
+      <li> bottom:  </li>
+      <li> left:  </li>
+      <li> right:  </li>
+    </ul>
+
+
+    <h5>Positioning:</h5> 
+    <ul> 
+      <li> position: static or relative or absolute or fixed
+      <li> z index: number
+      <li> display: block or inline or inline-block
+      <li> float: left or right
+      <li> clear: left or right
+    </ul>
+        
+    <h5>More on color:</h5>
+    <p>Colors can be specified in one of the following formats; </p>
+    <ol>
+      <li>Keyword </li>
+      <li>RGB </li>
+      <li>HEX </li>
+      <li>HSL </li>
+      <li>HSLA </li>
+    </ol>
+       
+  
   </body>
     
   
