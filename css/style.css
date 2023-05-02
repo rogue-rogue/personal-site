@@ -3,10 +3,9 @@
 } 
   
 h1 {
-  font-family: Luminari (fantasy);
+  font-family: Arial;
   font-size: 36px; 
-  border: 2px solid Black;
-  
+  border-bottom: 2px solid Black;
 }
 body {
   font-family: Courier, Monospace;
