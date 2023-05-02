@@ -1,7 +1,16 @@
-
+* {
+  background: rgb(250, 235, 215);
+} 
+  
+h1 {
+  font-family: Luminari (fantasy);
+  font-size: 36px; 
+  border: 2px solid Black;
+  
+}
 body {
   font-family: Courier, Monospace;
-  background: rgba(165, 164, 206, 1);
+  
 }
 
 /* Consolas
