@@ -11,6 +11,11 @@ body {
   font-family: Courier, Monospace;
   
 }
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
 
 /* Consolas
 Rockwell Extra Bold
