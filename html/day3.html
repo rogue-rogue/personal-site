@@ -26,6 +26,14 @@
         
         Also, my stylesheet won't link to these sub html files, only the index file. Not sure why this is. 
         
+        Update: I figured out the file issue. You need relative file paths. <br>
+        ./ searches current location for other files <br>
+        ../ searches next folder up <br>
+        
+          
+        href — like the anchor element, the value of this attribute must be the address, or path, to the CSS file.
+        rel — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
+       
         
         
        
