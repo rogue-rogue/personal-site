@@ -14,6 +14,56 @@
   <div class="middlepane">Test Page</div>
   <div class="rightpane">
     <h1>Test Page</h1></div>
+    
+    Let's look at CSS closer today. 
+    
+    The universal selector * can select any elements of a given type
+    
+    Attributes: name="value" 
+    
+    class: 
+    Attributes within tags, custom name which is linked in css file with .custom_name 
+    We can add multiple classes to an HTML element’s class attribute by separating them with a space. 
+    
+    ID = "page-number" / #page-number{} 
+    If an HTML element needs to be styled uniquely, we can give it an ID using the id attribute.
+    
+    style = "color: Green" 
+    
+    src: 
+    
+    href: 
+    
+    target: 
+    
+    There are so many attributes: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+    
+    
+    We can specifically style elements with different attributes. 
+    
+    Attributes can be selected similarly to types, classes, and IDs. We use square brackets. 
+    This example makes all the hyperlinks magenta. 
+    [href]{
+       color: magenta;
+    }
+    
+    Or we can get more granular: 
+    type[attribute*=value]. 
+    In short, this code selects an element where the attribute contains any instance of the specified value.
+    
+    These are all examples of pseudo-class selectors in action! In fact, :focus, :visited, :disabled, and :active are all pseudo-classes. Factors such as user interaction, site navigation, and position in the document tree can all give elements a different state with pseudo-class.
+
+    A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name. For example p:hover.
+
+p:hover {
+  background-color: lime;
+}
+
+To make styles easy to edit, it’s best to style with a type selector, if possible. If not, add a class selector. 
+If that is not specific enough, then consider using an ID selector.
+    
+    IDs are the most specific selector in CSS, followed by classes, and finally, type
+    
 </div>
 </body>
 </html>
